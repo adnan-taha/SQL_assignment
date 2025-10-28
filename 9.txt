@@ -1,0 +1,21 @@
+**vertical or horizontal scaling?**
+
+Horizontal scaling is the appropriate one.
+
+Why:
+
+Millions of users equate to a lot of concurrent reads and writes.
+
+You can split the load across multiple servers (e.g., one does writes, others do reads).
+
+It improves availability and performance as you scale.
+**2. How would you implement a leader-follower architecture for this database?**
+
+In a leader–follower setup, there is one database server that is the leader and performs all the write operations, while the followers perform read operations.
+The followers simply mirror the data of the leader.
+This helps with server load sharing, improves performance, and provides backup plans in case the leader is down.
+
+**3. If you must shard the database, what would be a good sharding key and why?**
+
+A good sharding key would be customer_id because much of the data, including orders and reviews, is customer-specific.
+This holds each customer's information in one location and distributes the load uniformly across various shards.

@@ -1,0 +1,21 @@
+*Is your design 1NF and 2NF?*
+both, Why??
+
+**1NF**
+Every table has a **primary key**.
+All columns have **atomic values** (nothing with lists or repeated groups).
+Example: In `books` table, `Title`, `ISBN`, and `price` each have a single value per row.
+
+**2NF**
+All tables have a **single-column primary key**.
+All other columns except the key **are fully dependent on the key**. There are **no partial dependencies**.
+Example: In `order_items`, `quantity` and `price_at_purchase` depend on `id` (the key), not even a component of a composite key.
+
+**3. Redundancies:**
+no big redundancie in this design.
+Details like author names, book details, and customer details are stored in separate tables so that they do not get replicated.
+Minimal redundancy can, however, be created if an author or a customer gets entered multiple times by mistake.
+
+**4. How to Prevent Redundancies:**
+Use unique constraints (e.g., `email` in `customers` or `Title` in `books`).
+Use validation on the application layer to check if a record (e.g., an author or customer) already exists before inserting a new one.

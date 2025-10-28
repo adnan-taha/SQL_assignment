@@ -1,0 +1,15 @@
+Always use prepared statements with placeholders (?).
+
+Never link user input into your query string.
+
+Let the MySQL driver safely handle and escape the input.
+
+
+| **Table**       | **Column**            | **Why to Index**                                        |
+| --------------- | --------------------- | ------------------------------------------------------- |
+| **books**       | `Title`               | To make searching books by title faster.                |
+| **books**       | `author_id`           | For quicker joins between `books` and `authors`.        |
+| **customers**   | `email`               | To quickly find customers by email (already unique).    |
+| **orders**      | `customer_id`         | To speed up finding all orders for a specific customer. |
+| **order_items** | `order_id`, `book_id` | Commonly used in joins when viewing order details.      |
+| **reviews**     | `book_id`             | To quickly fetch all reviews for a specific book.       |

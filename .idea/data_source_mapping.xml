@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/47fd06cc-0725-43dd-a8f2-5d6c8541bfc1/console.sql" value="47fd06cc-0725-43dd-a8f2-5d6c8541bfc1" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/47fd06cc-0725-43dd-a8f2-5d6c8541bfc1/console_1.sql" value="47fd06cc-0725-43dd-a8f2-5d6c8541bfc1" />
+    <file url="file://$PROJECT_DIR$/Data Integrity &amp; Transactions.sql" value="47fd06cc-0725-43dd-a8f2-5d6c8541bfc1" />
+    <file url="file://$PROJECT_DIR$/Queries.sql" value="47fd06cc-0725-43dd-a8f2-5d6c8541bfc1" />
+    <file url="file://$PROJECT_DIR$/Stored Procedure .sql" value="47fd06cc-0725-43dd-a8f2-5d6c8541bfc1" />
+    <file url="file://$PROJECT_DIR$/Views &amp; Optimization.sql" value="47fd06cc-0725-43dd-a8f2-5d6c8541bfc1" />
+    <file url="file://$PROJECT_DIR$/import.sql" value="47fd06cc-0725-43dd-a8f2-5d6c8541bfc1" />
+  </component>
+</project>
